@@ -1,0 +1,37 @@
+.content {
+    width: 80vw;
+    margin: 30px 10vw;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+      "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  }
+  
+  .content__h2 {
+    margin: 20px 0px 20px 30px;
+  }
+  .content__study-history {
+    display: flex;
+    justify-content: center;
+  }
+  .study-history table {
+    width: 70vw;
+  }
+  .study-history table tr {
+    border-bottom: solid 1px #eee;
+  }
+  .study-history table th {
+    font-size: 20px;
+    padding: 16px;
+    width: 40vw;
+    background: #fff5e5;
+  }
+  .study-history table td {
+    width: 20vw;
+    padding: 16px;
+    border: solid 1px #DEDEDE;
+  }
+
+  .study-history table td:nth-child(2),
+  .study-history table td:nth-child(3) {
+    text-align: center;
+  }
