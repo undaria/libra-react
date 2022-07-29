@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/libra-react/static/css/main.4ba5566a.css",
+    "main.js": "/libra-react/static/js/main.5d177d9f.js",
+    "static/js/787.28ab766f.chunk.js": "/libra-react/static/js/787.28ab766f.chunk.js",
+    "index.html": "/libra-react/index.html",
+    "main.4ba5566a.css.map": "/libra-react/static/css/main.4ba5566a.css.map",
+    "main.5d177d9f.js.map": "/libra-react/static/js/main.5d177d9f.js.map",
+    "787.28ab766f.chunk.js.map": "/libra-react/static/js/787.28ab766f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ba5566a.css",
+    "static/js/main.5d177d9f.js"
+  ]
+}
