@@ -6,15 +6,16 @@ import { NavLink, Outlet } from 'react-router-dom';
 //   };
 
 const navigation = [
-    { name: 'ホーム', to: '.'},
-    { name: 'プロフィ―ル', to: './profile'},
-    { name: '認知再構成法', to: './cbt'}
+    { name: 'ホーム', to: './'},
+    { name: '認知再構成法', to: './cbt'},
+    { name: '勉強一覧', to: './study'},
+    { name: 'プロフィ―ル', to: './profile'}
   ]
 
 export const Layout: React.FC = () => {
     return (<>
-       <nav className="bg-purple-900 text-white flex justify-between">
-       <ul className="px-10 py-4 flex space-x-3 ">
+       <nav className="bg-indigo-800 text-white flex justify-between">
+       <ul className="px-20 py-4 flex space-x-5 ">
         {navigation.map((item, index) => (
                 <NavLink
                 to = {item.to}
@@ -23,11 +24,12 @@ export const Layout: React.FC = () => {
                 >
                     {item.name}
                 </NavLink>
-        ))};
+        ))}
        </ul>
      </nav>
-
+     <div className='bg-slate-50'>
         <Outlet />
+      </div>
     </>
     );
 };

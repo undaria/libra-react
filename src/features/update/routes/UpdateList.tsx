@@ -4,24 +4,13 @@ import { useEffect, useState } from "react";
 import { ListItem } from "@/components/Listitem";
 import { ContentLayout } from "@/components/Layout/ContentLayout"
 
-type StudyRecord = {
-    title: string;
-    progress: number;
-    media_type: string;
-  };
 
-export const MystudyHistory = () => {
+export const UpdateList = () => {
 
-    const [studyRecords, setStudyRecords] = useState<StudyRecord[]>([]);
-    useEffect(() => {
-        axios.get<StudyRecord[]>('http://localhost:8000/mystudy/api/study_history/').then((res) => {
-        console.log('hoge2');
-        setStudyRecords(res.data);
-      })
-    }, []);
+
 
     return (
-      <ContentLayout title="勉強の記録">
+      <ContentLayout title="アップデート一覧">
         <div className="mt-4">
           <p>now creating...</p>
         </div>

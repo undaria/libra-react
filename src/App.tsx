@@ -13,16 +13,17 @@ import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import { Cbt } from './features/cbt/Cbt';
 import { RecoilRoot } from 'recoil';
-
+import { UpdateList } from './features/update/routes/UpdateList';
 
 function App() {
   return (  
     <RecoilRoot>
-    <BrowserRouter>
-    <Routes>
+    <BrowserRouter basename="/libra-react">
+    <Routes >
         <Route path="/" element={<Layout />}>
-        <Route index element={<MystudyHistory />} />
+        <Route index element={<UpdateList />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="study" element={<MystudyHistory />} />
         <Route path="cbt" element={<Cbt />} />
         <Route path="/*" element={<NotFound />} />
         </Route>

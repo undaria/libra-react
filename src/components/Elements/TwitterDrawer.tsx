@@ -34,12 +34,12 @@ const TwitterDrawerTransition = ({isOpen, setIsOpen, children, renderFooter}: Re
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <div className='w-10/12'>
+                <div className="w-hoge">
                   <div className="h-full divide-y divide-gray-200 flex flex-col bg-white shadow-xl">
                     <div className="min-h-0 flex-1 flex flex-col py-6 overflow-y-scroll">
                       <div className="px-4 sm:px-6">
                         <div className="flex items-start justify-between">
-                          <Dialog.Title className="text-lg font-medium text-gray-900">
+                          <Dialog.Title className="text-lg font-semibold text-gray-900">
                             新規作成
                           </Dialog.Title>
                           <div className="ml-3 h-7 flex items-center">

@@ -1,11 +1,13 @@
+import { ContentLayout } from "@/components/Layout/ContentLayout"
+
+
 export const Profile = () => {
   return (
-    <>
-      <h1>こちらプロフィールです</h1>
-      <div>
-        <p>ぶりぶり</p>
-      </div>
-    </>
+    <ContentLayout title="プロフィール">
+    <div className="mt-4">
+      <p>now creating...</p>
+    </div>
+  </ContentLayout>
   );
 };
 

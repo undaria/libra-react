@@ -4,6 +4,7 @@ import { PlusIcon } from '@heroicons/react/outline';
 import TwitterDrawer from '@/components/Elements/CreateDrawer';
 import { isDrawerOpenState } from '@/components/Elements/isDrawerOpenState';
 import { useRecoilState } from 'recoil';
+import { ContentLayout } from "@/components/Layout/ContentLayout"
 
 
  
@@ -21,20 +22,21 @@ export const Cbt = () => {
 
 
     return (      
-<>
-    <h1 className="text-green-200">認知再構成法</h1>
-    <Button size="sm" startIcon={<PlusIcon className="h-4 w-4"/>} onClick={handleClick}>
+      <ContentLayout title="認知再構成法">
+  
+    <div className="flex justify-end">
+    <Button size="md" startIcon={<PlusIcon className="h-4 w-4"/>} onClick={handleClick}>
       新規作成
     </Button>
+    </div>
 
-
-    <h2>コラム表一覧</h2>
-    <p className='w-auto inline-block p-1 rounded border-2 border-slate-900'>一覧だよ</p>
+    <h2 className="font-bold">コラム表一覧</h2>
+    <p>now creating ...</p>
 
 
     <TwitterDrawer />
 
 
-  </>
+    </ContentLayout>
     );
 };
