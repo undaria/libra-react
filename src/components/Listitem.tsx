@@ -1,5 +1,4 @@
 //import type { StudyRecord } from './types/studyRecord';
-import "@/style/styles.css";
 import type { FC } from "react";
 
 type StudyRecord = {

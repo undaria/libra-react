@@ -1,5 +1,5 @@
 import axios from 'axios';
-import "@/style/styles.css";
+
 import { useEffect, useState } from "react";
 import { ListItem } from "@/components/Listitem";
 import { ContentLayout } from "@/components/Layout/ContentLayout"

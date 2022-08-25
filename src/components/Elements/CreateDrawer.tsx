@@ -29,15 +29,12 @@ const TwitterDrawer = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data:any) => {
         alert('submit')
-        console.log(data)
-        
+      
     };
 
     useEffect(() => {
-        console.log(`Register ${register}`);
+        console.log(`Register`);
       }, [register]);
-
-    console.log(`createdrawer : ${isDrawerOpen}`);
 
     return (
     
@@ -49,7 +46,7 @@ const TwitterDrawer = () => {
                     <Button variant="inverse"  size="sm" onClick={() => setIsDrawerOpen(false)}>
                         キャンセル
                     </Button>
-                    <Button form="create-discussion" type='submit'   size="sm" onClick={() => setIsDrawerOpen(false)}>
+                    <Button form="create-discussion" type='submit'  size="sm" onClick={() => setIsDrawerOpen(false)}>
                         作成
                     </Button>
                 </>

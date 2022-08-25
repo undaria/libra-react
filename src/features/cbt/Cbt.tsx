@@ -32,11 +32,7 @@ export const Cbt = () => {
 
     <h2 className="font-bold">コラム表一覧</h2>
     <p>now creating ...</p>
-
-
     <TwitterDrawer />
-
-
     </ContentLayout>
     );
 };
